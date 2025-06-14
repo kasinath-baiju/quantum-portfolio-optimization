@@ -33,11 +33,11 @@ This project formulates the **portfolio optimization problem** as a **Quadratic 
 
 ## 📁 Structure
 
-| File                      | Description                                  |
-|------ --------------------|----------------------------------------------|
+| File | Description |
+|------|-------------|
 | `quantum_portfolio.ipynb` | Main notebook containing QAOA implementation |
-| `README.md`               | Project overview                             |
-| `requirements.txt`        | Package list (optional)                      |
+| `README.md` | Project overview |
+| `requirements.txt` | Package list (optional) |
 
 ---
 
@@ -58,3 +58,4 @@ _Add screenshots or output graphs once the project is complete._
 ## 📝 License
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
