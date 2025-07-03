@@ -1,61 +1,49 @@
-# Quantum Portfolio Optimization using QAOA
+# 🧮 Quantum Portfolio Optimization using QAOA
 
-This project demonstrates how Quantum Approximate Optimization Algorithm (QAOA) can be used to solve the classical financial portfolio optimization problem — a fundamental use case in quantum finance.
+This project demonstrates how the **Quantum Approximate Optimization Algorithm (QAOA)** can be applied to **portfolio optimization** — a core problem in financial decision-making — using **Qiskit**.
+
+> ⚡️ A hybrid quantum-classical approach for asset selection, risk balancing, and efficient portfolio construction.
 
 ---
 
 ## 📊 Problem Statement
 
-In finance, choosing the right combination of assets to maximize return while minimizing risk is critical. Classical algorithms often struggle with the **combinatorial complexity** as the number of assets increases.
+In modern finance, constructing an optimal portfolio involves selecting a subset of assets to:
+- Maximize **expected return**
+- Minimize **risk** (variance of returns)
+- Adhere to constraints like **budget** or **cardinality**
 
-This project formulates the **portfolio optimization problem** as a **Quadratic Unconstrained Binary Optimization (QUBO)** problem and solves it using QAOA with Qiskit.
-
----
-
-## 🚀 Technologies Used
-
-- [Python](https://www.python.org/)
-- [Qiskit](https://qiskit.org/)
-- [Qiskit Finance](https://qiskit-community.github.io/qiskit-finance/)
-- [Qiskit Optimization](https://qiskit.org/documentation/optimization/)
-- [Matplotlib](https://matplotlib.org/)
+Classical solvers face scalability issues as asset count grows. QAOA, a variational quantum algorithm, offers a new paradigm for solving such **combinatorial optimization** problems by formulating them as **QUBOs (Quadratic Unconstrained Binary Optimization)**.
 
 ---
 
 ## 🧠 What This Project Does
 
-- Models expected return and risk via a covariance matrix
-- Constructs a binary optimization problem with constraints (e.g., budget)
-- Uses Qiskit’s QAOA implementation to solve it
-- Visualizes selected assets and portfolio efficiency
+✅ Models the portfolio using:
+- Asset **expected returns** (`μ`)
+- **Covariance matrix** of asset returns (`Σ`)
+- Budget and risk factor
+
+✅ Converts it into a `QuadraticProgram` via **Qiskit Optimization**
+
+✅ Solves using QAOA with:
+- `qiskit_algorithms.QAOA`
+- `Sampler`-based backends (simulator or real)
+
+✅ Visualizes selected assets, their returns, and the efficient frontier.
 
 ---
 
-## 📁 Structure
+## 🚀 Technologies Used
 
-| File | Description |
-|------|-------------|
-| `quantum_portfolio.ipynb` | Main notebook containing QAOA implementation |
-| `README.md` | Project overview |
-| `requirements.txt` | Package list (optional) |
-
----
-
-## 📷 Demo (Optional)
-
-_Add screenshots or output graphs once the project is complete._
+- `Python 3.9`
+- `Qiskit Terra (0.45.1)`
+- `Qiskit Algorithms (0.3.1)`
+- `Qiskit Optimization (0.6.1)`
+- `Qiskit Finance (0.4.1)`
+- `Matplotlib`, `NumPy`
 
 ---
 
-## 🧩 Future Work
-
-- Compare QAOA with classical solvers
-- Try different portfolio sizes
-- Explore hardware backends (IBMQ)
-
----
-
-## 📝 License
-
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+## 📂 Repository Structure
 
