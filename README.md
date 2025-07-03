@@ -9,6 +9,7 @@ This project demonstrates how the **Quantum Approximate Optimization Algorithm (
 ## 📊 Problem Statement
 
 In modern finance, constructing an optimal portfolio involves selecting a subset of assets to:
+
 - Maximize **expected return**
 - Minimize **risk** (variance of returns)
 - Adhere to constraints like **budget** or **cardinality**
@@ -47,3 +48,18 @@ Classical solvers face scalability issues as asset count grows. QAOA, a variatio
 
 ## 📂 Repository Structure
 
+| File/Folder                  | Description                                    |
+|-----------------------------|------------------------------------------------|
+| `quantum_portfolio.ipynb`   | Main notebook implementing QAOA for portfolio  |
+| `README.md`                 | Project overview and instructions              |
+| `requirements.txt`          | Python dependencies (Qiskit, etc.)             |
+| `LICENSE`                   | MIT License file                               |
+
+---
+
+## ▶️ How to Run
+
+1. **Clone the repo**:
+   ```bash
+   git clone https://github.com/kasinath-baiju/quantum-portfolio-optimization
+   cd quantum-portfolio-optimization
